@@ -39,6 +39,7 @@ export default class AllComponentsPreview extends Component {
   renderAtom(name, atom, isOdd) {
     const {selectAtom} = this.props
     const heading = parseHighlightedMenu(atom.get('highlightedMenu') || atom.get('menu'))
+    console.log('atom', atom.get('propsDefinition').toJS());
 
     return (
       <div
