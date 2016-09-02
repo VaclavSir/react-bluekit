@@ -23,7 +23,6 @@ export default class AtomPreview extends Component {
     const customProps = variantProps ? variantProps : {}
     const extendedCustom = extendComponentProps(customProps, atom.get('propsDefinition'))
     const extendedProps = extendedFiltered.mergeDeep(extendedCustom)
-    console.log('filtered', filteredProps);
 
     return extendedProps;
   }
